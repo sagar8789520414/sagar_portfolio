@@ -46,7 +46,8 @@ export default function Contact() {
 
     try {
       // Using Formspree for email functionality
-      const response = await fetch('https://formspree.io/f/xaqkdrzz', {
+      const formId = import.meta.env.VITE_FORMSPREE_ID
+      const response = await fetch(`https://formspree.io/f/${formId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -54,7 +55,7 @@ export default function Contact() {
         body: JSON.stringify({
           subject: formData.subject,
           message: formData.message,
-          email: 'ssagarsingh818@gmail.com',
+          email: import.meta.env.VITE_CONTACT_EMAIL,
         }),
       })
 
