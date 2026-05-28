@@ -1,21 +1,25 @@
+import githubIcon from '../../assets/github.png'
+import linkedinIcon from '../../assets/linkedin.png'
+import instagramIcon from '../../assets/instagram.png'
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
     {
-      icon: '/assets/github.png',
+      icon: githubIcon,
       href: 'https://github.com/sagar8789520414',
       label: 'GitHub',
       title: 'GitHub',
     },
     {
-      icon: '/assets/linkedin.png',
+      icon: linkedinIcon,
       href: 'https://www.linkedin.com/in/sagar-kumar-singh-737046288/',
       label: 'LinkedIn',
       title: 'LinkedIn',
     },
     {
-      icon: '/assets/instagram.png',
+      icon: instagramIcon,
       href: 'https://www.instagram.com/sagarsingh12382/',
       label: 'Instagram',
       title: 'Instagram',

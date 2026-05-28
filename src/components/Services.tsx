@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import codingIcon from '../../assets/coding.png'
+import apiIcon from '../../assets/api.png'
+import aiIcon from '../../assets/artificial-intelligence.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -15,19 +18,19 @@ const services: Service[] = [
     title: 'Full-Stack Web Development',
     description:
       'Crafting high-performance, responsive single-page web applications utilizing React.js, Node.js, and FastAPI with clean state management.',
-    icon: '/assets/coding.png',
+    icon: codingIcon,
   },
   {
     title: 'API Architecture & Integration',
     description:
       'Designing secure RESTful APIs, implementing robust authentication gates (JWT), and connecting intelligent AI gateways like Gemini and Groq.',
-    icon: '/assets/api.png',
+    icon: apiIcon,
   },
   {
     title: 'Embedded Software & Robotics',
     description:
       'Writing efficient code for hardware automation, custom state architectures, and wireless data communication protocols like UART.',
-    icon: '/assets/artificial-intelligence.png',
+    icon: aiIcon,
   },
 ]
 
