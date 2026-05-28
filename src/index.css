@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('/assets/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a7c59;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3d6647;
+}
+
+/* Light theme scrollbar */
+html:has(body.light-theme) ::-webkit-scrollbar-thumb {
+  background: #4a7c59;
+  border-radius: 5px;
+}
+
+html:has(body.light-theme) ::-webkit-scrollbar-thumb:hover {
+  background: #3d6647;
+}
+
+/* Smooth transitions */
+button, a {
+  transition: all 0.3s ease;
+}
+
+/* Accent color utilities */
+.accent-text {
+  color: #00ff00;
+}
+
+.accent-border {
+  border-color: #00ff00;
+}
+
+.accent-bg {
+  background-color: #00ff00;
+  color: #1a1a1a;
+}
+
+.accent-hover:hover {
+  color: #00ff00;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+.glow:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
+}
